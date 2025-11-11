@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <RootNamespace>Bmg.Desafio.Proposta.Infra.Data</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.10" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="9.0.4" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Core.Infra.Core.Data\Core.Infra.Data.csproj" />
+    <ProjectReference Include="..\Proposta.Domain\Proposta.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+<ItemGroup><None Update="*.tt"><Generator>TextTemplatingFileGenerator</Generator></None></ItemGroup>
+
+<ItemGroup>
+  <Folder Include="Context\" />
+</ItemGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'"><NoWarn>1701;1702;8618;1998;8602;8625;8629</NoWarn></PropertyGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'"><NoWarn>1701;1702;8618;1998;8602;8625;8629</NoWarn></PropertyGroup>
+</Project>

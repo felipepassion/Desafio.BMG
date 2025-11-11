@@ -1,0 +1,69 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	  <RootNamespace>Bmg.Desafio.Contratacao.Domain</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Aggregates\ContratacaoAgg\ValueObjects\**" />
+    <EmbeddedResource Remove="Aggregates\ContratacaoAgg\ValueObjects\**" />
+    <None Remove="Aggregates\ContratacaoAgg\ValueObjects\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="9.0.10" />
+    <PackageReference Include="Serilog" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Core\Core.Domain\Core.Domain.csproj" />
+    <ProjectReference Include="..\..\Proposta\Proposta.Application.DTO\Proposta.Application.DTO.csproj" />
+    <ProjectReference Include="..\Contratacao.Application.DTO\Contratacao.Application.DTO.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Filters.tt">
+      <LastGenOutput>Filters.generated.cs</LastGenOutput>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </None>
+    <None Update="ProfilesMapping.tt">
+      <LastGenOutput>ProfilesMapping.cs</LastGenOutput>
+      <Generator>TextTemplatingFileGenerator</Generator>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Filters.cs">
+      <DependentUpon>Filters.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="ProfilesMapping.cs">
+      <DependentUpon>ProfilesMapping.tt</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+<ItemGroup><None Update="*.tt"><Generator>TextTemplatingFileGenerator</Generator></None></ItemGroup>
+
+<ItemGroup>
+  <None Update="DefaultEntities.tt">
+    <LastGenOutput>DefaultEntities.generated.cs</LastGenOutput>
+  </None>
+</ItemGroup>
+<ItemGroup><None Update="*.tt"><Generator>TextTemplatingFileGenerator</Generator></None></ItemGroup>
+<ItemGroup>
+  <None Update="Filters.tt">
+    <LastGenOutput>Filters.cs</LastGenOutput>
+  </None>
+</ItemGroup>
+<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'"><NoWarn>1701;1702;8618;1998;8602;8625;8629</NoWarn></PropertyGroup><PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'"><NoWarn>1701;1702;8618;1998;8602;8625;8629</NoWarn></PropertyGroup>
+</Project>

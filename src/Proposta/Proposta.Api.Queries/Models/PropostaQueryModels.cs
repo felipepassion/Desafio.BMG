@@ -1,0 +1,95 @@
+﻿
+namespace Bmg.Desafio.Proposta.Domain.Aggregates.PropostaAgg.Queries.Models;
+
+using Core.Api.Queries;
+
+public partial class PropostaQueryModel : BaseQueryModel {
+		public int? UserIdEqual { get; set; }
+		public int? UserIdNotEqual { get; set; }
+		public int[]? UserIdContains { get; set; }
+		public int[]? UserIdNotContains { get; set; }
+		public int? UserIdSince { get; set; }
+		public int? UserIdUntil { get; set; }
+		public int? UserIdLessThan { get; set; }
+		public int? UserIdGreaterThan { get; set; }
+		public int? UserIdLessThanOrEqual { get; set; }
+		public int? UserIdGreaterThanOrEqual { get; set; }
+		public Bmg.Desafio.Proposta.Enumerations.PropostaStatus? StatusEqual { get; set; }
+		///<summary>Valor de cobertura estimada (mantido para atender Specifications/Queries).</summary>
+		public decimal? ValorCoberturaEqual { get; set; }
+		public decimal? ValorCoberturaNotEqual { get; set; }
+		public decimal[]? ValorCoberturaContains { get; set; }
+		public decimal[]? ValorCoberturaNotContains { get; set; }
+		public decimal? ValorCoberturaSince { get; set; }
+		public decimal? ValorCoberturaUntil { get; set; }
+		public decimal? ValorCoberturaLessThan { get; set; }
+		public decimal? ValorCoberturaGreaterThan { get; set; }
+		public decimal? ValorCoberturaLessThanOrEqual { get; set; }
+		public decimal? ValorCoberturaGreaterThanOrEqual { get; set; }
+		public string? MotivoRejeicaoEqual { get; set; }
+		public string? MotivoRejeicaoNotEqual { get; set; }
+		public string? MotivoRejeicaoContains { get; set; }
+		public string? MotivoRejeicaoNotContains { get; set; }
+		public string? MotivoRejeicaoStartsWith { get; set; }
+		public System.DateTime? DataAprovacaoEqual { get; set; }
+		public System.DateTime? DataAprovacaoNotEqual { get; set; }
+		public System.DateTime[]? DataAprovacaoContains { get; set; }
+		public System.DateTime[]? DataAprovacaoNotContains { get; set; }
+		public System.DateTime? DataAprovacaoSince { get; set; }
+		public System.DateTime? DataAprovacaoUntil { get; set; }
+		public System.DateTime? DataAprovacaoLessThan { get; set; }
+		public System.DateTime? DataAprovacaoGreaterThan { get; set; }
+		public System.DateTime? DataAprovacaoLessThanOrEqual { get; set; }
+		public System.DateTime? DataAprovacaoGreaterThanOrEqual { get; set; }
+		public System.DateTime? DataRejeicaoEqual { get; set; }
+		public System.DateTime? DataRejeicaoNotEqual { get; set; }
+		public System.DateTime[]? DataRejeicaoContains { get; set; }
+		public System.DateTime[]? DataRejeicaoNotContains { get; set; }
+		public System.DateTime? DataRejeicaoSince { get; set; }
+		public System.DateTime? DataRejeicaoUntil { get; set; }
+		public System.DateTime? DataRejeicaoLessThan { get; set; }
+		public System.DateTime? DataRejeicaoGreaterThan { get; set; }
+		public System.DateTime? DataRejeicaoLessThanOrEqual { get; set; }
+		public System.DateTime? DataRejeicaoGreaterThanOrEqual { get; set; }
+		public bool? ContratadaEqual { get; set; }
+		public string? ExternalIdEqual { get; set; }
+		public string? ExternalIdNotEqual { get; set; }
+		public string? ExternalIdContains { get; set; }
+		public string? ExternalIdNotContains { get; set; }
+		public string? ExternalIdStartsWith { get; set; }
+		public System.DateTime? CreatedAtEqual { get; set; }
+		public System.DateTime? CreatedAtNotEqual { get; set; }
+		public System.DateTime[]? CreatedAtContains { get; set; }
+		public System.DateTime[]? CreatedAtNotContains { get; set; }
+		public System.DateTime? CreatedAtSince { get; set; }
+		public System.DateTime? CreatedAtUntil { get; set; }
+		public System.DateTime? CreatedAtLessThan { get; set; }
+		public System.DateTime? CreatedAtGreaterThan { get; set; }
+		public System.DateTime? CreatedAtLessThanOrEqual { get; set; }
+		public System.DateTime? CreatedAtGreaterThanOrEqual { get; set; }
+		public System.DateTime? UpdatedAtEqual { get; set; }
+		public System.DateTime? UpdatedAtNotEqual { get; set; }
+		public System.DateTime[]? UpdatedAtContains { get; set; }
+		public System.DateTime[]? UpdatedAtNotContains { get; set; }
+		public System.DateTime? UpdatedAtSince { get; set; }
+		public System.DateTime? UpdatedAtUntil { get; set; }
+		public System.DateTime? UpdatedAtLessThan { get; set; }
+		public System.DateTime? UpdatedAtGreaterThan { get; set; }
+		public System.DateTime? UpdatedAtLessThanOrEqual { get; set; }
+		public System.DateTime? UpdatedAtGreaterThanOrEqual { get; set; }
+		public System.DateTime? DeletedAtEqual { get; set; }
+		public System.DateTime? DeletedAtNotEqual { get; set; }
+		public System.DateTime[]? DeletedAtContains { get; set; }
+		public System.DateTime[]? DeletedAtNotContains { get; set; }
+		public System.DateTime? DeletedAtSince { get; set; }
+		public System.DateTime? DeletedAtUntil { get; set; }
+		public System.DateTime? DeletedAtLessThan { get; set; }
+		public System.DateTime? DeletedAtGreaterThan { get; set; }
+		public System.DateTime? DeletedAtLessThanOrEqual { get; set; }
+		public System.DateTime? DeletedAtGreaterThanOrEqual { get; set; }
+		public int? IdEqual { get; set; }
+		public int? IdNotEqual { get; set; }
+		public int[]? IdContains { get; set; }
+		public int[]? IdNotContains { get; set; }
+		public bool? DeletadoEqual { get; set; }
+	}

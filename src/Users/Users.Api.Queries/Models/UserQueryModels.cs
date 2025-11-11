@@ -1,0 +1,84 @@
+﻿
+namespace Bmg.Desafio.Users.Domain.Aggregates.UsersAgg.Queries.Models;
+
+using Core.Api.Queries;
+
+public partial class UserQueryModel : BaseQueryModel {
+		public string? NameEqual { get; set; }
+		public string? NameNotEqual { get; set; }
+		public string? NameContains { get; set; }
+		public string? NameNotContains { get; set; }
+		public string? NameStartsWith { get; set; }
+		public Bmg.Desafio.Users.Enumerations.UserRole? UserRoleEqual { get; set; }
+		public bool? NeedSendOnboardingMailEqual { get; set; }
+		public string? DocumentEqual { get; set; }
+		public string? DocumentNotEqual { get; set; }
+		public string? DocumentContains { get; set; }
+		public string? DocumentNotContains { get; set; }
+		public string? DocumentStartsWith { get; set; }
+		public string? EmailEqual { get; set; }
+		public string? EmailNotEqual { get; set; }
+		public string? EmailContains { get; set; }
+		public string? EmailNotContains { get; set; }
+		public string? EmailStartsWith { get; set; }
+		public string? PhoneNumberEqual { get; set; }
+		public string? PhoneNumberNotEqual { get; set; }
+		public string? PhoneNumberContains { get; set; }
+		public string? PhoneNumberNotContains { get; set; }
+		public string? PhoneNumberStartsWith { get; set; }
+		public string? UserNameEqual { get; set; }
+		public string? UserNameNotEqual { get; set; }
+		public string? UserNameContains { get; set; }
+		public string? UserNameNotContains { get; set; }
+		public string? UserNameStartsWith { get; set; }
+		public string? PasswordEqual { get; set; }
+		public string? PasswordNotEqual { get; set; }
+		public string? PasswordContains { get; set; }
+		public string? PasswordNotContains { get; set; }
+		public string? PasswordStartsWith { get; set; }
+		public string? AuthTokenEqual { get; set; }
+		public string? AuthTokenNotEqual { get; set; }
+		public string? AuthTokenContains { get; set; }
+		public string? AuthTokenNotContains { get; set; }
+		public string? AuthTokenStartsWith { get; set; }
+		public string? ExternalIdEqual { get; set; }
+		public string? ExternalIdNotEqual { get; set; }
+		public string? ExternalIdContains { get; set; }
+		public string? ExternalIdNotContains { get; set; }
+		public string? ExternalIdStartsWith { get; set; }
+		public System.DateTime? CreatedAtEqual { get; set; }
+		public System.DateTime? CreatedAtNotEqual { get; set; }
+		public System.DateTime[]? CreatedAtContains { get; set; }
+		public System.DateTime[]? CreatedAtNotContains { get; set; }
+		public System.DateTime? CreatedAtSince { get; set; }
+		public System.DateTime? CreatedAtUntil { get; set; }
+		public System.DateTime? CreatedAtLessThan { get; set; }
+		public System.DateTime? CreatedAtGreaterThan { get; set; }
+		public System.DateTime? CreatedAtLessThanOrEqual { get; set; }
+		public System.DateTime? CreatedAtGreaterThanOrEqual { get; set; }
+		public System.DateTime? UpdatedAtEqual { get; set; }
+		public System.DateTime? UpdatedAtNotEqual { get; set; }
+		public System.DateTime[]? UpdatedAtContains { get; set; }
+		public System.DateTime[]? UpdatedAtNotContains { get; set; }
+		public System.DateTime? UpdatedAtSince { get; set; }
+		public System.DateTime? UpdatedAtUntil { get; set; }
+		public System.DateTime? UpdatedAtLessThan { get; set; }
+		public System.DateTime? UpdatedAtGreaterThan { get; set; }
+		public System.DateTime? UpdatedAtLessThanOrEqual { get; set; }
+		public System.DateTime? UpdatedAtGreaterThanOrEqual { get; set; }
+		public System.DateTime? DeletedAtEqual { get; set; }
+		public System.DateTime? DeletedAtNotEqual { get; set; }
+		public System.DateTime[]? DeletedAtContains { get; set; }
+		public System.DateTime[]? DeletedAtNotContains { get; set; }
+		public System.DateTime? DeletedAtSince { get; set; }
+		public System.DateTime? DeletedAtUntil { get; set; }
+		public System.DateTime? DeletedAtLessThan { get; set; }
+		public System.DateTime? DeletedAtGreaterThan { get; set; }
+		public System.DateTime? DeletedAtLessThanOrEqual { get; set; }
+		public System.DateTime? DeletedAtGreaterThanOrEqual { get; set; }
+		public int? IdEqual { get; set; }
+		public int? IdNotEqual { get; set; }
+		public int[]? IdContains { get; set; }
+		public int[]? IdNotContains { get; set; }
+		public bool? DeletadoEqual { get; set; }
+	}
