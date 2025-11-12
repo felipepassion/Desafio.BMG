@@ -74,7 +74,7 @@ JWT_SECRET=supersecret_local_123
 3) Subir tudo:
 - docker compose up -d
 
-<img width="1426" height="274" alt="image" src="https://github.com/user-attachments/assets/d04ed1e8-a8ef-4758-86ed-16e0247a0282" />
+<img width="1177" height="290" alt="image" src="https://github.com/user-attachments/assets/85cf2324-9343-465f-b402-22c21f4ddb91" />
 
 4) Acessos rápidos:
 - Swagger Users: http://localhost:5095/swagger
@@ -86,7 +86,7 @@ JWT_SECRET=supersecret_local_123
 Observação: as migrations são aplicadas pela `Migrations.Api` quando o compose sobe.
 
 ## Logs Serilog.Seq -> http://localhost:5341/#/events?range=1d
-<img width="1254" height="983" alt="image" src="https://github.com/user-attachments/assets/3417a22f-ac78-400e-9e41-6c309014faf8" />
+<img width="1047" height="821" alt="image" src="https://github.com/user-attachments/assets/64008aad-cdba-4623-8782-801dbfcfebb9" />
 
 ## Domínio
 - Proposta
@@ -149,4 +149,4 @@ Links úteis no código (busque pelos projetos):
 
 
 ## Testes Funcionais
-<img width="632" height="620" alt="image" src="https://github.com/user-attachments/assets/b60de2c9-2c77-4a3f-9718-5f8bad81805f" />
+<img width="402" height="620" alt="image" src="https://github.com/user-attachments/assets/ac3c4f34-c3ab-43a3-bb46-4da82b410e91" />
